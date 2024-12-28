@@ -14,10 +14,6 @@ Nevo Export is a developer friendly WordPress plugin which gives flexibility to 
 
 == Description ==
 
-Nevo Export is one of the best and powerful data exporter plugin. It has number of features which make more manageable and convenient to WordPress user to exact their WordPress site data and again re-use in another website.
-
-Exported Zip can be imported by using plugin [Nevo Import](https://github.com/CaoNguyenHN/nevo-export/)
-
 It is designed specially for theme developer who want to provide demo data to their customer but it can be also use for migration purpose too.
 
 Some listed features of Nevo Export are given below :
