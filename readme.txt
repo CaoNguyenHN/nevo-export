@@ -16,7 +16,7 @@ Nevo Export is a developer friendly WordPress plugin which gives flexibility to 
 
 Nevo Export is one of the best and powerful data exporter plugin. It has number of features which make more manageable and convenient to WordPress user to exact their WordPress site data and again re-use in another website.
 
-Exported Zip can be imported by using plugin [Nevo Import](https://wordpress.org/plugins/nevo-import/)
+Exported Zip can be imported by using plugin [Nevo Import](https://github.com/CaoNguyenHN/nevo-export/)
 
 It is designed specially for theme developer who want to provide demo data to their customer but it can be also use for migration purpose too.
 
@@ -42,82 +42,6 @@ There are two ways to install any Nevo Export Plugin:
 2.Extract Nevo Export and placed it to the "/wp-content/plugins/" directory.
     - Activate the plugin through the "Plugins" menu in WordPress.
 
-== Frequently Asked Questions ==
-
-= Is Nevo Export is free plugin ? =
-
-Yes, it is free plugin.
-
-= I have exported zip using Nevo Export plugin, now how to import on other sites ? =
-
-After exported zip, you can import it using [Nevo Import](https://wordpress.org/plugins/nevo-import/) plugin
-
-= All of the options are not exported by the plugin, how can I include them? =
-
-By default all options on options table does not exported by this plugin, since it contain a lot of information and all information does not needed.
-But you can use following hook to include all options:
-
-`add_action('nevo_export_all_options','prefix_add_all_options');
-function prefix_add_all_options(){
-    return true;
-}`
-
-It is not recommended to use this hook unless you are migrating your site.
-
-= Some option table are not exported, what is happening? =
-
-You can include needed options by using `nevo_export_include_options` filter hook
-
-`add_action('nevo_export_include_options','prefix_include_my_options');
- function prefix_include_my_options( $included_options ){
-     $my_options = array(
-         'blogname',
-         'blogdescription',
-         'posts_per_page',
-         'date_format',
-         'time_format',
-         'show_on_front',
-         'thumbnail_size_w',
-         'thumbnail_size_h',
-         'thumbnail_crop',
-         'medium_size_w',
-         'medium_size_h',
-         'medium_large_size_w',
-         'medium_large_size_h',
-         'avatar_default',
-         'large_size_w',
-         'large_size_h',
-         'page_for_posts',
-         'page_on_front',
-         'woocommerce_shop_page_id',
-         'woocommerce_cart_page_id',
-         'woocommerce_checkout_page_id',
-         'woocommerce_myaccount_page_id',
-         'page_on_front',
-         'show_on_front',
-         'page_for_posts',
-     );
-     return array_unique (array_merge( $included_options, $my_options));
- }`
-
-= Can you list all the hooks on the plugin? =
-
-Here are some important list of filter hooks:
-
-- nevo_export_page_slug
-- nevo_export_capability
-- nevo_export_ignore_post_types
-- nevo_export_include_options
-- nevo_export_all_options
-
-Here are some important list of action hooks:
-
-- nevo_export_before_create_data_files
-- nevo_export_form
-
-== Screenshots ==
-
-1. Export Main Screen
 
 == Changelog ==
 
