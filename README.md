@@ -11,7 +11,7 @@ Plugin **Nevo Export** được phát triển với mục đích hỗ trợ xu�
 #### **Hướng dẫn sử dụng Plugin Nevo Export:**
 
 **A. Trên trang web mẫu (Export)**
-1. Tải về **Plugin Nevo Export** từ kho plugin WordPress hoặc cài đặt thủ công.
+1. Tải về **Plugin Nevo Export** tại đây - cài đặt thủ công.
 2. Truy cập vào **Plugins** > **Add New**.
 3. Tìm và cài đặt **Nevo Export**.
 4. Sau khi cài đặt, vào **Tool** > **Nevo Export** để bắt đầu xuất dữ liệu.
@@ -35,7 +35,7 @@ The **main purpose** of this plugin is to assist you in exporting and importing 
 #### **How to Use Nevo Export Plugin:**
 
 **A. On the Demo Website (Export)**
-1. Download the **Nevo Export** plugin from the WordPress plugin repository or install it manually.
+1. Download the **Nevo Export** here - manual installation.
 2. Go to **Plugins** > **Add New**.
 3. Install the **Nevo Export** plugin.
 4. After installation, go to **Tool** > **Nevo Export** to start exporting the data.
